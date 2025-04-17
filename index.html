@@ -21,70 +21,84 @@
   });
 </script>
 
-  <div class="cursor-circle"></div>
 
-  <header class="navbar">
-    <div class="logo">JOURNEY <span>LONDON</span></div>
-    <nav>
-      <ul>
-        <li>HOME</li>
-        <li>WHO WE ARE</li>
-        <li>MEET THE TEAM</li>
-        <li>CLASSES</li>
-        <li>MEMBERSHIPS</li>
+
+<header>
+  <nav>
+      <ul class="sidebar">
+          <li onclick="hideSidebar()">
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                      <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                  </svg>
+              </a>
+          </li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#featured-destinations">WHO WE ARE</a></li>
+          <li><a href="#packages-section">MEET THE TEAM</a></li>
+          <li><a href="#testimonials">CLASSES</a></li>
+          <li><a href="#contact">MEMBERSHIPS</a></li>
+          <li><a href="#" class="btn">CONTACT</a></li>
       </ul>
-      
-    </nav>
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <button class="contact-btn">CONTACT</button>
-  </header>
 
-  <section class="hero" data-aos="fade-up">
+      <ul>
+          <a href="#" class="logo">Travel<span>Explorer</span></a>
+          <li class="hideOnMobile"><a href="#hero">Home</a></li>
+          <li class="hideOnMobile"><a href="#featured-destinations">WHO WE ARE</a></li>
+          <li class="hideOnMobile"><a href="#packages-section">MEET THE TEAM</a></li>
+          <li class="hideOnMobile"><a href="#testimonials">CLASSES</a></li>
+          <li class="hideOnMobile"><a href="#contact">MEMBERSHIPS</a></li>
+          <li class="menu-button" onclick="showSidebar()">
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                      <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                  </svg>
+              </a>
+          </li>
+      </ul>
+  </nav>
+</header>
+
+  <section class="hero">
     <div class="hero-content">
-      <h1>
+      <h1 data-aos="fade-up" data-aos-delay="200">
         THE ONLY <br />
         <span class="yellow">IMPOSSIBLE JOURNEY</span> IS <br />
         THE ONE YOU <br />
         <span class="yellow">NEVER BEGIN.</span>
       </h1>
-      <button class="journey-btn">BEGIN YOUR JOURNEY</button>
+      <button class="journey-btn" data-aos="fade-up" data-aos-delay="500">BEGIN YOUR JOURNEY</button>
     </div>
     <!-- <div class="hero-img">
       <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z3ltfGVufDB8fDB8fHww" alt="Hero Image" />
     </div> -->
   </section>
 
-  <section class="who-we-are" data-aos="fade-up">
+  <section class="who-we-are">
   <div class="container">
-    <div class="number">01</div>
+    <div class="number" data-aos="fade-up" data-aos-delay="700">01</div>
     <div class="content-wrapper">
-      <div class="image-box">
+      <div class="image-box" data-aos="fade-up" data-aos-delay="500">
         <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGd5bXxlbnwwfHwwfHx8MA%3D%3D" alt="Weights on floor" />
       </div>
       <div class="text-box">
-        <h2 class="heading-overlay">WHO WE ARE</h2>
-        <h3 class="main-heading">WHO WE ARE</h3>
-        <p>At Journey London we believe Crossfitters come in all shapes and sizes, we are all on a journey towards our own personal best health and fitness levels. A journey that makes us better as athletes, friends and people.</p>
-        <p>Our facility is unlike any other gym you’ve been to before. We pride ourselves not only in providing world class CrossFit training, but we also believe in creating a motivating and dynamic environment. We are the community dedicated to your human evolution, one workout at a time.</p>
-        <p>Come in for a free trial class! Lose some body fat, gain some friends, and get fit for life!</p>
+        <h2 class="heading-overlay" data-aos="fade-up" data-aos-delay="500">WHO WE ARE</h2>
+        <h3 class="main-heading" data-aos="fade-up" data-aos-delay="700">WHO WE ARE</h3>
+        <p data-aos="fade-up" data-aos-delay="500">At Journey London we believe Crossfitters come in all shapes and sizes, we are all on a journey towards our own personal best health and fitness levels. A journey that makes us better as athletes, friends and people.</p>
+        <p data-aos="fade-up" data-aos-delay="800">Our facility is unlike any other gym you’ve been to before. We pride ourselves not only in providing world class CrossFit training, but we also believe in creating a motivating and dynamic environment. We are the community dedicated to your human evolution, one workout at a time.</p>
+        <p data-aos="fade-up" data-aos-delay="1100">Come in for a free trial class! Lose some body fat, gain some friends, and get fit for life!</p>
       </div>
     </div>
   </div>
 </section>
 
 
-<section class="team-section" data-aos="fade-up">
-  <div class="section-number">02</div>
-  <h3 class="bg-heading">MEET THE TEAM</h3>
-  <h2 class="mainheading">MEET THE TEAM</h2>
+<section class="team-section">
+  <div class="section-number" data-aos="fade-up" data-aos-delay="700">02</div>
+  <h3 class="bg-heading" data-aos="fade-up" data-aos-delay="200">MEET THE TEAM</h3>
+  <h2 class="mainheading" data-aos="fade-up" data-aos-delay="400">MEET THE TEAM</h2>
 
   <div class="team-grid">
     <div class="team-member">
-      <img src="https://images.unsplash.com/photo-1521805103424-d8f8430e8933?w=500" alt="Bryan Hunter">
+      <img src="https://images.unsplash.com/photo-1521805103424-d8f8430e8933?w=500" alt="Bryan Hunter" data-aos="fade-up" data-aos-delay="400">
       <div class="overlay">
         <h3>BRYAN HUNTER</h3>
         <span>Founder & Owner</span>
@@ -92,7 +106,7 @@
     </div>
 
     <div class="team-member">
-      <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=500" alt="Alex Smith">
+      <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=500" alt="Alex Smith" data-aos="fade-up" data-aos-delay="500">
       <div class="overlay">
         <h3>ALEX SMITH</h3>
         <span>Strength Coach</span>
@@ -100,7 +114,7 @@
     </div>
 
     <div class="team-member">
-      <img src="https://plus.unsplash.com/premium_photo-1661629166303-03b4e70dd485?w=500" alt="Samantha James">
+      <img src="https://plus.unsplash.com/premium_photo-1661629166303-03b4e70dd485?w=500" alt="Samantha James" data-aos="fade-up" data-aos-delay="600">
       <div class="overlay">
         <h3>SAMANTHA JAMES</h3>
         <span>Yoga Instructor</span>
@@ -108,7 +122,7 @@
     </div>
 
     <div class="team-member">
-      <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=500" alt="Dylan Reed">
+      <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=500" alt="Dylan Reed" data-aos="fade-up" data-aos-delay="700">
       <div class="overlay">
         <h3>DYLAN REED</h3>
         <span>Cardio Coach</span>
@@ -116,7 +130,7 @@
     </div>
 
     <div class="team-member">
-      <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500" alt="Rachel Green">
+      <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500" alt="Rachel Green" data-aos="fade-up" data-aos-delay="800">
       <div class="overlay">
         <h3>RACHEL GREEN</h3>
         <span>HIIT Expert</span>
@@ -124,7 +138,7 @@
     </div>
 
     <div class="team-member">
-      <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=500" alt="Liam Thomas">
+      <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=500" alt="Liam Thomas" data-aos="fade-up" data-aos-delay="900">
       <div class="overlay">
         <h3>LIAM THOMAS</h3>
         <span>Trainer</span>
@@ -132,7 +146,7 @@
     </div>
 
     <div class="team-member">
-      <img src="https://plus.unsplash.com/premium_photo-1661920538067-c48451160c72?w=500" alt="Nina Fox">
+      <img src="https://plus.unsplash.com/premium_photo-1661920538067-c48451160c72?w=500" alt="Nina Fox" data-aos="fade-up" data-aos-delay="1000">
       <div class="overlay">
         <h3>NINA FOX</h3>
         <span>Fitness Model</span>
@@ -140,7 +154,7 @@
     </div>
 
     <div class="team-member">
-      <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=500" alt="Marcus Lane">
+      <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=500" alt="Marcus Lane" data-aos="fade-up" data-aos-delay="1100">
       <div class="overlay">
         <h3>MARCUS LANE</h3>
         <span>CrossFit Pro</span>
@@ -150,41 +164,41 @@
 </section>
 
 
-<section class="featured-section" data-aos="fade-up">
-  <div class="section-number-featured">03</div>
-  <h2 class="featured-title">FEATURED CLASSES</h2>
-  <h3 class="bg-heading-featured">FEATURED CLASSES</h3>
+<section class="featured-section">
+  <div class="section-number-featured" data-aos="fade-up" data-aos-delay="400">03</div>
+  <h2 class="featured-title" data-aos="fade-up" data-aos-delay="600">FEATURED CLASSES</h2>
+  <h3 class="bg-heading-featured" data-aos="fade-up" data-aos-delay="800">FEATURED CLASSES</h3>
 
   <div class="class-grid">
     <div class="class-card">
-      <img src="https://images.unsplash.com/photo-1521805103424-d8f8430e8933?w=800" alt="CrossFit Class">
+      <img src="https://images.unsplash.com/photo-1521805103424-d8f8430e8933?w=800" alt="CrossFit Class" data-aos="fade-up" data-aos-delay="400">
       <div class="class-content">
-        <div class="class-title">CROSSFIT - BEGINNERS CLASS</div>
-        <button class="book-btn">BOOK</button>
+        <div class="class-title" data-aos="fade-up" data-aos-delay="400">CROSSFIT - BEGINNERS CLASS</div>
+        <button class="book-btn" data-aos="fade-up" data-aos-delay="400">BOOK</button>
       </div>
     </div>
 
     <div class="class-card">
-      <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=800" alt="Gymnastics">
+      <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=800" alt="Gymnastics" data-aos="fade-up" data-aos-delay="600">
       <div class="class-content">
-        <div class="class-title">CROSSFIT - GYMNASTICS</div>
-        <button class="book-btn">BOOK</button>
+        <div class="class-title" data-aos="fade-up" data-aos-delay="600">CROSSFIT - GYMNASTICS</div>
+        <button class="book-btn" data-aos="fade-up" data-aos-delay="600">BOOK</button>
       </div>
     </div>
 
     <div class="class-card">
-      <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800" alt="Weightlifting">
+      <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800" alt="Weightlifting" data-aos="fade-up" data-aos-delay="800">
       <div class="class-content">
-        <div class="class-title">WEIGHTLIFTING SESSION</div>
-        <button class="book-btn">BOOK</button>
+        <div class="class-title" data-aos="fade-up" data-aos-delay="800">WEIGHTLIFTING SESSION</div>
+        <button class="book-btn" data-aos="fade-up" data-aos-delay="800">BOOK</button>
       </div>
     </div>
 
     <div class="class-card">
-      <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800" alt="HIIT">
+      <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800" alt="HIIT" data-aos="fade-up" data-aos-delay="1000">
       <div class="class-content">
-        <div class="class-title">HIIT TRAINING</div>
-        <button class="book-btn">BOOK</button>
+        <div class="class-title" data-aos="fade-up" data-aos-delay="1000">HIIT TRAINING</div>
+        <button class="book-btn" data-aos="fade-up" data-aos-delay="1000">BOOK</button>
       </div>
     </div>
   </div>
@@ -209,13 +223,13 @@
   </div>
 </section>
 
-<section class="membership-section" data-aos="fade-up">
-  <h3 class="membership-heading">MEMBERSHIPS</h3>
-  <h2 class="overlay-text">MEMBERSHIP</h2>
+<section class="membership-section">
+  <h3 class="membership-heading" data-aos="fade-up" data-aos-delay="600">MEMBERSHIPS</h3>
+  <h2 class="overlay-text" data-aos="fade-up" data-aos-delay="400">MEMBERSHIP</h2>
   <div class="membership-cards">
 
     <!-- Flexi -->
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-delay="800">
       <h3>FLEXI</h3>
       <img src="/images/flexi.png" alt="Flexi Icon" class="card-icon" />
       <p class="price">£ 99.99 <span>/ month</span></p>
@@ -228,7 +242,7 @@
     </div>
 
     <!-- All Access -->
-    <div class="card highlighted">
+    <div class="card highlighted" data-aos="fade-up" data-aos-delay="900">
       <h3>ALL ACCESS</h3>
       <img src="/images/all-access.png" alt="All Access Icon" class="card-icon" />
       <p class="price">£ 199.99 <span>/ month</span></p>
@@ -241,7 +255,7 @@
     </div>
 
     <!-- Off-Peak -->
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-delay="1000">
       <h3>OFF-PEAK</h3>
       <img src="/images/off-peak.png" alt="Off-Peak Icon" class="card-icon" />
       <p class="price">£ 149.99 <span>/ month</span></p>
