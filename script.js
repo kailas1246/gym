@@ -1,57 +1,71 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   const sidebar = document.querySelector(".sidebar");
   const menuButton = document.querySelector(".menu-button");
-  const closeButton = document.querySelector(".sidebar li:first-child a"); // Close button link
-  const menuLinks = document.querySelectorAll(".sidebar li a"); // All menu links
+  const closeButton = document.querySelector(".sidebar li:first-child a"); 
+  const menuLinks = document.querySelectorAll(".sidebar li a");
   const navbar = document.querySelector("nav");
+  const hamburger = document.querySelector(".hamburger");
 
+  // Toggle sidebar
   function showSidebar() {
-      sidebar.classList.add("active");
+    sidebar.classList.add("active");
   }
 
   function hideSidebar() {
-      sidebar.classList.remove("active");
+    sidebar.classList.remove("active");
   }
 
-  // Show sidebar on menu button click
-  menuButton.addEventListener("click", showSidebar);
+  if (menuButton) menuButton.addEventListener("click", showSidebar);
+  if (closeButton) closeButton.addEventListener("click", hideSidebar);
 
-  // Hide sidebar on close button click
-  closeButton.addEventListener("click", hideSidebar);
-
-  // Hide sidebar when clicking any menu link
   menuLinks.forEach(link => {
-      link.addEventListener("click", hideSidebar);
+    link.addEventListener("click", hideSidebar);
   });
 
-  // Change navbar style when scrolling
+  // Navbar scroll effect
   window.addEventListener("scroll", () => {
-      if (window.scrollY > window.innerHeight * 0.1) {
-          navbar.classList.add("scrolled");
-      } else {
-          navbar.classList.remove("scrolled");
-      }
+    if (window.scrollY > window.innerHeight * 0.1) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+
+  // Hamburger toggle (if separate functionality is needed)
+  if (hamburger) {
+    hamburger.addEventListener("click", () => {
+      navbar.classList.toggle("open");
+    });
+  }
+
+  // JavaScript to handle smooth scrolling to class sections
+document.querySelectorAll('.nav-link, .btn').forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();  // Prevent default link behavior
+    
+    const targetClass = this.getAttribute('href').substring(1); // Get the class name from href (without the #)
+    const targetElement = document.querySelector(`.${targetClass}`); // Find the element with that class
+    
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop, // Scroll to the top of the target element
+        behavior: 'smooth' // Smooth scroll
+      });
+    }
   });
 });
 
-const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('nav');
 
-hamburger.addEventListener('click', () => {
-  nav.classList.toggle('open');
-});
-
-
- const counters = document.querySelectorAll('.counter');
+  // Counter logic
+  const counters = document.querySelectorAll(".counter");
   let started = false;
 
   const startCounters = () => {
     counters.forEach(counter => {
       const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
+        const target = +counter.getAttribute("data-target");
         const current = +counter.innerText;
-        const increment = Math.ceil(target / 100); // Adjust speed
+        const increment = Math.ceil(target / 100);
 
         if (current < target) {
           counter.innerText = current + increment;
@@ -64,16 +78,17 @@ hamburger.addEventListener('click', () => {
     });
   };
 
-  // Trigger when section is visible
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !started) {
-        startCounters();
-        started = true;
-      }
-    });
-  }, { threshold: 0.4 });
+  const counterSection = document.getElementById("counter");
+  if (counterSection) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !started) {
+          startCounters();
+          started = true;
+        }
+      });
+    }, { threshold: 0.4 });
 
-  observer.observe(document.getElementById('counter'));
-
-  
+    observer.observe(counterSection);
+  }
+});
