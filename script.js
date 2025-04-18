@@ -113,29 +113,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const bookBtn = document.querySelector(".journey-btn");
+  const journeyBtn = document.querySelector(".journey-btn");
 
-  if (bookBtn) {
-    bookBtn.addEventListener("click", function () {
+  if (journeyBtn) {
+    journeyBtn.addEventListener("click", function () {
       const phoneNumber = "9072444077"; // Change this to your WhatsApp number (no + or spaces)
       const message = "Can I get more info about the gym";
       const encodedMessage = encodeURIComponent(message);
       const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-      window.open(whatsappURL, "_blank");
+      window.location.href = whatsappURL;
     });
   }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const bookBtn = document.querySelector(".join-btn");
+  const joinBtn = document.querySelector(".join-btn");
 
-  if (bookBtn) {
-    bookBtn.addEventListener("click", function () {
+  if (joinBtn) {
+    joinBtn.addEventListener("click", function () {
       const phoneNumber = "9072444077"; // Change this to your WhatsApp number (no + or spaces)
       const message = "Can I get more info about the gym";
       const encodedMessage = encodeURIComponent(message);
       const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-      window.open(whatsappURL, "_blank");
+      window.location.href = whatsappURL;
     });
   }
 });
