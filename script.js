@@ -92,3 +92,48 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 
     observer.observe(counterSection);
   }
+
+
+// --------------------whatsapp--------------
+
+document.addEventListener("DOMContentLoaded", function () {
+  const bookBtn = document.querySelector(".book-btn");
+
+  if (bookBtn) {
+    bookBtn.addEventListener("click", function () {
+      const phoneNumber = "9072444077"; // Change this to your WhatsApp number (no + or spaces)
+      const message = "Can I get more info about the gym";
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+      window.open(whatsappURL, "_blank");
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const bookBtn = document.querySelector(".journey-btn");
+
+  if (bookBtn) {
+    bookBtn.addEventListener("click", function () {
+      const phoneNumber = "9072444077"; // Change this to your WhatsApp number (no + or spaces)
+      const message = "Can I get more info about the gym";
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+      window.open(whatsappURL, "_blank");
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const bookBtn = document.querySelector(".join-btn");
+
+  if (bookBtn) {
+    bookBtn.addEventListener("click", function () {
+      const phoneNumber = "9072444077"; // Change this to your WhatsApp number (no + or spaces)
+      const message = "Can I get more info about the gym";
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+      window.open(whatsappURL, "_blank");
+    });
+  }
+});
