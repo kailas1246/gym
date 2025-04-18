@@ -101,11 +101,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (bookBtn) {
     bookBtn.addEventListener("click", function () {
-      const phoneNumber = "9072444077"; // Change this to your WhatsApp number (no + or spaces)
+      const phoneNumber = "9072444077"; // ✅ Your WhatsApp number (without + or spaces)
       const message = "Can I get more info about the gym";
       const encodedMessage = encodeURIComponent(message);
       const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-      window.open(whatsappURL, "_blank");
+
+      // ✅ Redirect to WhatsApp (this works perfectly on mobile too)
+      window.location.href = whatsappURL;
     });
   }
 });
