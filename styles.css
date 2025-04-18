@@ -179,8 +179,9 @@ nav a:hover {
   background-position-x: center;
 }
 .hamb{
-  margin-right: -40px;
-  margin-left: 36px;
+  margin-right: -10px;
+  margin-left: 56px;
+  background-color: black;
 }
 
 .hero-content h1 {
