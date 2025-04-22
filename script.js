@@ -139,3 +139,71 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const joinBtn = document.querySelector(".btn2");
+
+  if (joinBtn) {
+    joinBtn.addEventListener("click", function () {
+      const phoneNumber = "9072444077"; // Change this to your WhatsApp number (no + or spaces)
+      const message = "Can I get more info about the gym";
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+      window.location.href = whatsappURL;
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const joinBtn = document.querySelector(".btn3");
+
+  if (joinBtn) {
+    joinBtn.addEventListener("click", function () {
+      const phoneNumber = "9072444077"; // Change this to your WhatsApp number (no + or spaces)
+      const message = "Can I get more info about the gym";
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+      window.location.href = whatsappURL;
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const joinBtn = document.querySelector(".btn4");
+
+  if (joinBtn) {
+    joinBtn.addEventListener("click", function () {
+      const phoneNumber = "9072444077"; // Change this to your WhatsApp number (no + or spaces)
+      const message = "Can I get more info about the gym";
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+      window.location.href = whatsappURL;
+    });
+  }
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const joinBtn = document.querySelector(".jbtn2");
+
+  if (joinBtn) {
+    joinBtn.addEventListener("click", function () {
+      const phoneNumber = "9072444077"; // Change this to your WhatsApp number (no + or spaces)
+      const message = "Can I get more info about the gym";
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+      window.location.href = whatsappURL;
+    });
+  }
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const joinBtn = document.querySelector(".jbtn3");
+
+  if (joinBtn) {
+    joinBtn.addEventListener("click", function () {
+      const phoneNumber = "9072444077"; // Change this to your WhatsApp number (no + or spaces)
+      const message = "Can I get more info about the gym";
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+      window.location.href = whatsappURL;
+    });
+  }
+});
